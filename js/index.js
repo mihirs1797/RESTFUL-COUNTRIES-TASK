@@ -86,7 +86,7 @@ function createHTML(countriesData){
 function getWeatherData(arr,countryName){
   let lat = +arr[0].toFixed(2);
   let lon = +arr[1].toFixed(2);
-  let url = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=3ce1c849f7784212f2497377c2ef5afa";
+  let url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=3ce1c849f7784212f2497377c2ef5afa";
   var request = new XMLHttpRequest;
   request.open('GET',url,true);
   request.send();
